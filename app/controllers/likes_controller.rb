@@ -1,4 +1,9 @@
 class LikesController < ApplicationController
+  
+  def show
+    @micropost = Micropost.find(params[:micropost_id])
+  end
+  
   def create
     micropost = Micropost.find(params[:micropost_id])
     current_user.like(micropost)
