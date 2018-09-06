@@ -15,6 +15,8 @@ class MicropostsController < ApplicationController
 
   def destroy
   end
+  
+
 
   private
 
